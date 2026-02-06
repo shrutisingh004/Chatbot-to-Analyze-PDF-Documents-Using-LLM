@@ -13,8 +13,6 @@ The system **extracts content from PDFs, embeds the text, and uses a large langu
 ✔ Context-aware responses powered by an LLM  
 ✔ Lightweight web UI (HTML/CSS/JS backend)  
 
-(Source inspiration: RAG-based chatbots that enable interactive querying of documents using LLMs and vector search) :contentReference[oaicite:1]{index=1}
-
 ---
 
 ## 📌 How It Works
@@ -36,7 +34,7 @@ The system **extracts content from PDFs, embeds the text, and uses a large langu
    - The system stitches relevant context together with the user query.
    - The LLM (e.g., OpenAI GPT) responds with content derived from the PDF.
 
-This architecture follows the common **Retrieval-Augmented Generation (RAG) pattern** used in modern AI document chatbots. :contentReference[oaicite:2]{index=2}
+This architecture follows the common **Retrieval-Augmented Generation (RAG) pattern** used in modern AI document chatbots.
 
 ---
 
