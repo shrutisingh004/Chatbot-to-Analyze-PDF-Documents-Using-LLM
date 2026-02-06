@@ -5,7 +5,7 @@ The system extracts text from PDFs and uses a **Large Language Model (LLM)** to 
 
 ---
 
-## 🚀 Features
+## Features
 
 - Upload and analyze PDF documents  
 - Natural language question-answering  
@@ -15,13 +15,13 @@ The system extracts text from PDFs and uses a **Large Language Model (LLM)** to 
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 Reading and extracting insights from long PDF documents can be time-consuming. This project solves that problem by enabling users to **ask questions directly to a PDF** and receive meaningful answers in real time using LLMs.
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 1. **PDF Upload & Text Extraction**  
    The uploaded PDF is parsed and converted into raw text.
@@ -39,7 +39,7 @@ This follows the **Retrieval-Augmented Generation (RAG)** approach commonly used
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Programming Language:** Python  
 - **LLM & NLP:** OpenAI API, LangChain  
@@ -49,7 +49,7 @@ This follows the **Retrieval-Augmented Generation (RAG)** approach commonly used
 
 ---
 
-## 🧪 Example Use Cases
+## Example Use Cases
 
 - “Summarize this PDF document.”  
 - “What are the key points mentioned in chapter 2?”  
@@ -57,7 +57,7 @@ This follows the **Retrieval-Augmented Generation (RAG)** approach commonly used
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - Python 3.8+
@@ -84,7 +84,7 @@ pip install -r requirements.txt
 
 4. Set the API key:
 ```bash
-export OPENAI_API_KEY="your_api_key_here"
+export OPENAI_API_KEY = "your_api_key_here"
 ```
 
 5. Run the application:
