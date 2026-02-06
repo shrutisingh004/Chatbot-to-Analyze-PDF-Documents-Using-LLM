@@ -1,66 +1,93 @@
 # 📄 Chatbot to Analyze PDF Documents Using LLM
 
-An **AI-powered chatbot** that lets users upload PDF files and interact with them using natural language.  
-The system **extracts content from PDFs, embeds the text, and uses a large language model (LLM)** to generate context-aware answers based on the document content.
+An **AI-powered chatbot** that allows users to upload PDF documents and interact with them using natural language.  
+The system extracts text from PDFs and uses a **Large Language Model (LLM)** to generate accurate, context-aware responses based on the document content.
 
 ---
 
 ## 🚀 Features
 
-✔ Upload and parse PDF documents  
-✔ Semantic retrieval using embeddings  
-✔ Natural language question-answer interface  
-✔ Context-aware responses powered by an LLM  
-✔ Lightweight web UI (HTML/CSS/JS backend)  
+- Upload and analyze PDF documents  
+- Natural language question-answering  
+- Context-aware responses grounded in document content  
+- Semantic retrieval using embeddings  
+- Simple and intuitive user interface  
 
 ---
 
-## 📌 How It Works
+## 📌 Project Overview
 
-1. **PDF Upload & Text Extraction**
-   - User uploads a PDF file.
-   - All text is extracted and pre-processed into manageable chunks.
+Reading and extracting insights from long PDF documents can be time-consuming. This project solves that problem by enabling users to **ask questions directly to a PDF** and receive meaningful answers in real time using LLMs.
 
-2. **Embedding & Storage**
-   - Each chunk is converted into vector embeddings.
-   - A vector store/index is created for efficient similarity retrieval.
+---
 
-3. **User Query Handling**
-   - Queries are converted to embeddings.
-   - Relevant chunks are retrieved based on similarity.
-   - The language model uses the most relevant contexts to craft answers.
+## 🧠 How It Works
 
-4. **LLM + Retrieval Fusion**
-   - The system stitches relevant context together with the user query.
-   - The LLM (e.g., OpenAI GPT) responds with content derived from the PDF.
+1. **PDF Upload & Text Extraction**  
+   The uploaded PDF is parsed and converted into raw text.
 
-This architecture follows the common **Retrieval-Augmented Generation (RAG) pattern** used in modern AI document chatbots.
+2. **Text Chunking & Embedding**  
+   The extracted text is split into smaller chunks and converted into vector embeddings.
+
+3. **Query Processing**  
+   User queries are embedded and matched with the most relevant document chunks.
+
+4. **LLM Response Generation**  
+   The LLM generates responses using the retrieved context to ensure answers remain grounded in the document.
+
+This follows the **Retrieval-Augmented Generation (RAG)** approach commonly used in modern document-based AI systems.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Component | Technology |
-|-----------|------------|
-| Backend | Python |
-| Frontend UI | HTML / CSS / JavaScript |
-| LLM Integration | OpenAI API (or other LLM provider) |
-| Text / PDF Handling | PDF parsing libraries |
-| Retrieval | Embeddings + vector similarity |  
-
-*(Adjust this table based on your actual implementation details)*
+- **Programming Language:** Python  
+- **LLM & NLP:** OpenAI API, LangChain  
+- **PDF Processing:** PyPDF / PDF text extraction libraries  
+- **Vector Search:** Embedding-based similarity matching  
+- **Frontend:** HTML, CSS, JavaScript  
 
 ---
 
-## 📝 Usage
+## 🧪 Example Use Cases
+
+- “Summarize this PDF document.”  
+- “What are the key points mentioned in chapter 2?”  
+- “Explain the methodology used in this paper.”  
+
+---
+
+## ⚙️ Installation & Setup
 
 ### Prerequisites
-- Python 3.x
-- API Key (e.g., OpenAI) stored securely
+- Python 3.8+
+- OpenAI API key
 
-### Installation
+### Steps
+
 1. Clone the repository:
-   ```bash
+```bash
    git clone https://github.com/shrutisingh004/Chatbot-to-Analyze-PDF-Documents-Using-LLM.git
    cd Chatbot-to-Analyze-PDF-Documents-Using-LLM
+```
+   
+2. Create and activate a virtual environment:
+```bash
+   python -m venv venv
+   source venv/binactivate   # Windows: venv\Scripts\activate
+```
 
+3. Install dependencies:
+```bash
+   pip install -r requirements.txt
+```
+
+4. Set the API key:
+```bash
+   export OPENAI_API_KEY="your_api_key_here"
+```
+
+5. Run the application:
+```bash
+   python app.py
+```
