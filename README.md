@@ -67,27 +67,27 @@ This follows the **Retrieval-Augmented Generation (RAG)** approach commonly used
 
 1. Clone the repository:
 ```bash
-   git clone https://github.com/shrutisingh004/Chatbot-to-Analyze-PDF-Documents-Using-LLM.git
-   cd Chatbot-to-Analyze-PDF-Documents-Using-LLM
+git clone https://github.com/shrutisingh004/Chatbot-to-Analyze-PDF-Documents-Using-LLM.git
+cd Chatbot-to-Analyze-PDF-Documents-Using-LLM
 ```
    
 2. Create and activate a virtual environment:
 ```bash
-   python -m venv venv
-   source venv/binactivate   # Windows: venv\Scripts\activate
+python -m venv venv
+source venv/binactivate   # Windows: venv\Scripts\activate
 ```
 
 3. Install dependencies:
 ```bash
-   pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 4. Set the API key:
 ```bash
-   export OPENAI_API_KEY="your_api_key_here"
+export OPENAI_API_KEY="your_api_key_here"
 ```
 
 5. Run the application:
 ```bash
-   python app.py
+python app.py
 ```
